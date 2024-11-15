@@ -1,7 +1,7 @@
-object Form1: TForm1
+object FORM_CONTATOS: TFORM_CONTATOS
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Contatos'
   ClientHeight = 514
   ClientWidth = 429
   Color = clBtnFace
@@ -14,7 +14,7 @@ object Form1: TForm1
   object lblContato: TLabel
     Left = 8
     Top = 8
-    Width = 274
+    Width = 289
     Height = 81
     Caption = 'Contatos'
     Font.Charset = ANSI_CHARSET
@@ -88,7 +88,7 @@ object Form1: TForm1
   object DBNavigator1: TDBNavigator
     Left = 16
     Top = 320
-    Width = 240
+    Width = 400
     Height = 25
     DataSource = DataSource1
     TabOrder = 4
@@ -105,6 +105,30 @@ object Form1: TForm1
     TitleFont.Height = -12
     TitleFont.Name = 'Segoe UI'
     TitleFont.Style = []
+  end
+  object DBMemo1: TDBMemo
+    Left = 236
+    Top = 113
+    Width = 185
+    Height = 171
+    DataField = 'observa'#231#227'o'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Button1: TButton
+    Left = 320
+    Top = 8
+    Width = 101
+    Height = 81
+    Caption = 'Sair'
+    TabOrder = 7
+    OnClick = Button1Click
   end
   object FDConnection1: TFDConnection
     Params.Strings = (

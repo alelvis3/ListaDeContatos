@@ -1,5 +1,5 @@
 ﻿[txtEmail]
-Coordinates=280,150,61,58
+Coordinates=20,210,61,58
 
 [txtNome]
 Coordinates=550,30,62,58
@@ -33,11 +33,11 @@ Visible=True
 Coordinates=311,1,91,36
 
 [BindSourcecontatos]
-Coordinates=390,10,130,168
+Coordinates=488,340,130,190
 
 [FDTablecontatos]
-Coordinates=273,155,112,36
-Visible=False
+Coordinates=610,350,112,36
+Visible=True
 
 [BindingsList1]
 Coordinates=294,174,91,36
@@ -50,4 +50,7 @@ Coordinates=198,78,89,36
 
 [DBGrid1]
 Coordinates=198,133,64,36
+
+[DBMemo1]
+Coordinates=520,220,75,36
 

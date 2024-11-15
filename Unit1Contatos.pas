@@ -14,7 +14,7 @@ uses
   FireDAC.Comp.DataSet, FireDAC.Comp.Client, Data.Bind.DBScope, Vcl.DBGrids;
 
 type
-  TForm1 = class(TForm)
+  TFORM_CONTATOS = class(TForm)
     txtID: TEdit;
     txtNome: TEdit;
     txtEmail: TEdit;
@@ -35,6 +35,9 @@ type
     DBNavigator1: TDBNavigator;
     DataSource1: TDataSource;
     DBGrid1: TDBGrid;
+    DBMemo1: TDBMemo;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,10 +45,15 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FORM_CONTATOS: TFORM_CONTATOS;
 
 implementation
 
 {$R *.dfm}
+
+procedure TFORM_CONTATOS.Button1Click(Sender: TObject);
+begin
+FORM_CONTATOS.Close;
+end;
 
 end.
